@@ -1,0 +1,22 @@
+{
+  "name": "comp_back",
+  "version": "1.0.0",
+  "description": "this is backend",
+  "license": "ISC",
+  "author": "jyoung",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.12.0",
+    "nodemon": "^3.0.1"
+  }
+}
