@@ -57,7 +57,9 @@ router.post("/update", async (req, res) => {
       {
         $set: {
           title: req.body.title,
-          content: req.body.content
+          content: req.body.content,
+          coordinates: req.body.coordinates,
+          address: req.body.address
         }
       }
     );
@@ -80,7 +82,8 @@ router.post("/write", async (req, res) => {
       writer: req.body._id,
       title: req.body.title,
       content: req.body.content,
-      address: req.body.address
+      address: req.body.address,
+      coordinates: req.body.coordinates
     };
 
     const board = new Board(obj);
