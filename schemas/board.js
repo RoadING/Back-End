@@ -18,6 +18,14 @@ const boardSchema = new Schema({
     type: String,
     required: true
   },
+  coordinates: {
+    type: [Number],
+    required: true
+  },
+  address: {
+    type: String,
+    required: true
+  },
   imgPath: {
     type: String
   },
